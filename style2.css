@@ -1,0 +1,187 @@
+/* 🔥 TEAM LAYOUT FIX */
+.team-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE (CARDS CONTAINER) */
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* shrink when active */
+.team-cards.shrink {
+    width: 40%;
+}
+
+/* 🔥 ACTUAL CARD FIX (IMPORTANT) */
+.team-card {
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+/* active animation */
+.team-card.active {
+    transform: translateX(-20px) scale(1.05);
+    z-index: 5;
+}
+
+/* RIGHT PANEL */
+.team-details {
+    width: 60%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    display: none;
+    animation: slideIn 0.4s ease;
+}
+
+/* show panel */
+.team-details.show {
+    display: block;
+}
+
+/* animation */
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+
+/* ================= TEAM SECTION FINAL FIX ================= */
+
+/* Wrapper */
+.team-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE GRID */
+.team-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    width: 100%;
+    transition: 0.4s;
+}
+
+/* shrink effect */
+.team-cards.shrink {
+    width: 40%;
+}
+
+/* CARD */
+.team-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+    position: relative;
+
+    display: flex;              /* 🔥 IMPORTANT */
+    justify-content: center;
+    align-items: center;
+}
+
+/* ACTIVE CARD */
+.team-card.active {
+    transform: translateX(-20px) scale(1.05);
+    z-index: 5;
+}
+
+/* CONTENT INSIDE CARD */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    width: 100%;
+}
+
+/* AVATAR WRAPPER (IMPORTANT FIX) */
+.avatar-wrap {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* RING */
+.avatar-ring {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--accent),
+        var(--accent2),
+        var(--accent3),
+        var(--accent)
+    );
+    animation: spin 4s linear infinite;
+    opacity: 0.6;
+}
+
+/* IMAGE CONTAINER */
+.avatar-inner {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--bg2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE */
+.avatar-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* NAME */
+.member-name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ROLE */
+.member-role {
+    margin: 0;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    line-height: 1.3;
+}
+
+/* RIGHT PANEL */
+.team-details {
+    width: 60%;
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 25px;
+    display: none;
+    animation: slideIn 0.4s ease;
+}
+
+.team-details.show {
+    display: block;
+}
+
+/* ANIMATION */
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}

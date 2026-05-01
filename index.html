@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अपना Kaam – Turning Skills Into Impact</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Exo+2:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+
+
+    <!-- Particles Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav id="navbar">
+        <div class="nav-logo">अपना KAAM</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn" id="themeToggle" title="Toggle Theme">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#hero">Home</a>
+        <a href="#team">Team</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- ========== HERO ========== -->
+    <section id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <div class="hero-tag"><i class="fas fa-bolt"></i> India's Rising Freelance Crew</div>
+                    <h1 class="hero-title">
+                        अपना Kaam –<br>
+                        <span class="gradient-text">Turning Skills</span><br>
+                        Into Impact
+                    </h1>
+                    <p class="hero-sub">Freelancing services by passionate creators. We build, design, edit, and manage
+                        — all under one roof with a futuristic edge.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn-primary"><i class="fas fa-handshake"></i> Hire Us</a>
+                        <a href="#portfolio" class="btn-outline"><i class="fas fa-eye"></i> View Our Work</a>
+                    </div>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-num">4</div>
+                            <div class="stat-label">Specialists</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">50+</div>
+                            <div class="stat-label">Projects Done</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">4</div>
+                            <div class="stat-label">Core Services</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-num">100%</div>
+                            <div class="stat-label">Passion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hero-svg-wrap" style="height:420px;position:relative;">
+                        <div class="hero-orbit orbit1">
+                            <div class="orbit-dot"></div>
+                        </div>
+                        <div class="hero-orbit orbit2">
+                            <div class="orbit-dot orbit-dot2"></div>
+                        </div>
+                        <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);">
+                            <!-- Hero Humanoid Team SVG -->
+                            <svg class="hero-humanoid" width="280" height="320" viewBox="0 0 280 320" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <!-- Central figure -->
+                                <defs>
+                                    <radialGradient id="bodyGrad" cx="50%" cy="30%" r="60%">
+                                        <stop offset="0%" stop-color="#00d4ff" stop-opacity="0.3" />
+                                        <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.1" />
+                                    </radialGradient>
+                                    <filter id="glow">
+                                        <feGaussianBlur stdDeviation="3" result="blur" />
+                                        <feMerge>
+                                            <feMergeNode in="blur" />
+                                            <feMergeNode in="SourceGraphic" />
+                                        </feMerge>
+                                    </filter>
+                                    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stop-color="#00d4ff" />
+                                        <stop offset="100%" stop-color="#7c3aed" />
+                                    </linearGradient>
+                                </defs>
+                                <!-- Glow BG -->
+                                <ellipse cx="140" cy="260" rx="100" ry="20" fill="url(#bodyGrad)" />
+                                <!-- Body platform -->
+                                <rect x="80" y="230" width="120" height="60" rx="16" fill="#0d1529" stroke="url(#g1)"
+                                    stroke-width="1.5" opacity="0.9" />
+                                <rect x="95" y="245" width="90" height="30" rx="8" fill="#0a0f1e" opacity="0.7" />
+                                <!-- Torso -->
+                                <rect x="95" y="140" width="90" height="100" rx="18" fill="#0d1529" stroke="url(#g1)"
+                                    stroke-width="1.5" />
+                                <!-- Chest glow panel -->
+                                <rect x="110" y="158" width="60" height="40" rx="8" fill="url(#bodyGrad)"
+                                    stroke="#00d4ff" stroke-width="1" opacity="0.8" />
+                                <rect x="120" y="165" width="40" height="8" rx="3" fill="#00d4ff" opacity="0.6" />
+                                <rect x="125" y="178" width="30" height="4" rx="2" fill="#7c3aed" opacity="0.6" />
+                                <rect x="120" y="187" width="40" height="4" rx="2" fill="#06ffa5" opacity="0.4" />
+                                <!-- Head -->
+                                <rect x="100" y="60" width="80" height="90" rx="22" fill="#0d1529" stroke="url(#g1)"
+                                    stroke-width="1.5" />
+                                <!-- Face visor -->
+                                <rect x="112" y="76" width="56" height="32" rx="10" fill="#00d4ff" opacity="0.12"
+                                    stroke="#00d4ff" stroke-width="1" />
+                                <!-- Eyes -->
+                                <ellipse cx="126" cy="92" rx="8" ry="8" fill="#00d4ff" opacity="0.9"
+                                    filter="url(#glow)" />
+                                <ellipse cx="154" cy="92" rx="8" ry="8" fill="#00d4ff" opacity="0.9"
+                                    filter="url(#glow)" />
+                                <ellipse cx="126" cy="92" rx="4" ry="4" fill="white" />
+                                <ellipse cx="154" cy="92" rx="4" ry="4" fill="white" />
+                                <!-- Mouth line -->
+                                <path d="M 124 118 Q 140 126 156 118" stroke="#00d4ff" stroke-width="1.5"
+                                    stroke-linecap="round" opacity="0.7" />
+                                <!-- Arms -->
+                                <rect x="50" y="148" width="48" height="22" rx="11" fill="#0d1529" stroke="url(#g1)"
+                                    stroke-width="1.2" />
+                                <rect x="182" y="148" width="48" height="22" rx="11" fill="#0d1529" stroke="url(#g1)"
+                                    stroke-width="1.2" />
+                                <!-- Hands with glow -->
+                                <circle cx="50" cy="159" r="14" fill="#0d1529" stroke="#00d4ff" stroke-width="1.2" />
+                                <circle cx="230" cy="159" r="14" fill="#0d1529" stroke="#7c3aed" stroke-width="1.2" />
+                                <circle cx="50" cy="159" r="6" fill="#00d4ff" opacity="0.4" />
+                                <circle cx="230" cy="159" r="6" fill="#7c3aed" opacity="0.4" />
+                                <!-- Floating elements left -->
+                                <rect x="10" y="110" width="30" height="22" rx="5" fill="#0d1529" stroke="#06ffa5"
+                                    stroke-width="1" opacity="0.8" />
+                                <rect x="14" y="115" width="22" height="3" rx="1" fill="#06ffa5" opacity="0.7" />
+                                <rect x="14" y="121" width="16" height="3" rx="1" fill="#06ffa5" opacity="0.5" />
+                                <rect x="14" y="127" width="20" height="3" rx="1" fill="#06ffa5" opacity="0.3" />
+                                <!-- Floating elements right -->
+                                <rect x="240" y="110" width="30" height="22" rx="5" fill="#0d1529" stroke="#7c3aed"
+                                    stroke-width="1" opacity="0.8" />
+                                <circle cx="250" cy="118" r="4" fill="#7c3aed" opacity="0.6" />
+                                <circle cx="261" cy="118" r="4" fill="#7c3aed" opacity="0.4" />
+                                <rect x="244" y="126" width="22" height="3" rx="1" fill="#7c3aed" opacity="0.5" />
+                                <!-- Antenna -->
+                                <line x1="140" y1="60" x2="140" y2="40" stroke="url(#g1)" stroke-width="2" />
+                                <circle cx="140" cy="36" r="6" fill="url(#g1)" filter="url(#glow)" />
+                                <!-- Legs/base connectors -->
+                                <rect x="112" y="228" width="22" height="10" rx="4" fill="url(#g1)" opacity="0.6" />
+                                <rect x="146" y="228" width="22" height="10" rx="4" fill="url(#g1)" opacity="0.6" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section id="team" class="pad-section">
+        <div class="container">
+
+            <div class="section-header reveal">
+                <div class="section-label">// The Crew</div>
+                <h2 class="section-title">Meet the <span>Masterminds</span></h2>
+                <p class="section-desc">
+                    Four passionate creators with distinct superpowers, united by one mission — delivering excellence.
+                </p>
+            </div>
+
+            <div class="team-wrapper">
+
+                <!-- LEFT SIDE -->
+                <div class="team-cards">
+
+                    <!-- Deepak -->
+                    <div class="team-card reveal" data-name="Deepak" data-role="Frontend Dev & Social Media Mgr"
+                        data-avatar="img/deepak.png" data-desc="Handles UI and frontend growth">
+
+                        <div class="card-content">
+                            <div class="avatar-wrap">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-inner">
+                                    <img src="img/deepak.png" alt="Deepak">
+                                </div>
+                            </div>
+
+                            <div class="member-name">Deepak</div>
+                            <div class="member-role">Frontend Dev & Social Media Mgr</div>
+                        </div>
+                    </div>
+
+                    <!-- Deepanshu -->
+                    <div class="team-card reveal" data-name="Deepanshu" data-role="Developer / Tech Specialist"
+                        data-avatar="img/deepanshu.png" data-desc="Builds backend systems">
+
+                        <div class="card-content">
+                            <div class="avatar-wrap">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-inner">
+                                    <img src="img/deepanshu.png" alt="Deepanshu">
+                                </div>
+                            </div>
+
+                            <div class="member-name">Deepanshu</div>
+                            <div class="member-role">Developer / Tech Specialist</div>
+                        </div>
+                    </div>
+
+                    <!-- Aman -->
+                    <div class="team-card reveal" data-name="Aman" data-role="Video Editor" data-avatar="img/aman.png"
+                        data-desc="Creates engaging edits">
+
+                        <div class="card-content">
+
+                            <div class="avatar-wrap">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-inner">
+                                    <img src="img/amn.png" alt="Aman">
+                                </div>
+                            </div>
+
+                            <div class="member-name">Aman</div>
+                            <div class="member-role">Video Editor</div>
+                        </div>
+                    </div>
+
+                    <!-- Shubham -->
+                    <div class="team-card reveal" data-name="Shubham" data-role="Graphic Designer"
+                        data-avatar="img/shubham.png" data-desc="Designs creatives">
+
+                        <div class="card-content">
+                            <div class="avatar-wrap">
+                                <div class="avatar-ring"></div>
+                                <div class="avatar-inner">
+                                    <img src="img/shubham.png" alt="Shubham">
+                                </div>
+                            </div>
+
+                            <div class="member-name">Shubham</div>
+                            <div class="member-role">Graphic Designer & Video Editor</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT PANEL -->
+                <div class="team-details" id="teamDetails"></div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section id="services" class="pad-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">// What We Do</div>
+                <h2 class="section-title">Our <span>Services</span></h2>
+                <p class="section-desc">From pixels to performance — we cover every digital dimension your brand
+                    needs
+                    to thrive.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon"><i class="fas fa-code" style="color:white;"></i></div>
+                    <div class="service-title">Web Development</div>
+                    <p class="service-desc">Modern, responsive websites built with cutting-edge frameworks. From
+                        landing
+                        pages to full-stack applications — fast, scalable, and stunning.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon" style="background:linear-gradient(135deg,#f06,#fa0);"><i
+                            class="fas fa-hashtag" style="color:white;"></i></div>
+                    <div class="service-title">Social Media Management</div>
+                    <p class="service-desc">Strategic content creation, scheduling, and community management. We
+                        grow
+                        your audience with authentic, engaging, platform-native content.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon" style="background:linear-gradient(135deg,#06ffa5,#0077cc);"><i
+                            class="fas fa-film" style="color:white;"></i></div>
+                    <div class="service-title">Video Editing</div>
+                    <p class="service-desc">Cinematic edits, reels, YouTube videos, motion graphics, and color
+                        grading.
+                        Every frame crafted to tell your story with maximum impact.</p>
+                    <div class="service-line"></div>
+                </div>
+                <div class="service-card reveal reveal-delay-4">
+                    <div class="service-icon" style="background:linear-gradient(135deg,#ff6b9d,#7c3aed);"><i
+                            class="fas fa-paint-brush" style="color:white;"></i></div>
+                    <div class="service-title">Graphic Designing</div>
+                    <p class="service-desc">Brand identities, logos, social media posts, posters, and UI mockups.
+                        Visual
+                        design that speaks before words do — bold, clean, memorable.</p>
+                    <div class="service-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTFOLIO ========== -->
+    <section id="portfolio" class="pad-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">// Our Work</div>
+                <h2 class="section-title">Portfolio <span>Showcase</span></h2>
+                <p class="section-desc">A glimpse of what we've built, crafted, and shipped for clients across
+                    domains.
+                </p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal reveal-delay-1">
+                    <div class="portfolio-thumb pt-1"><i class="fas fa-globe" style="color:#00d4ff;opacity:0.6;"></i>
+                    </div>
+                    <span class="port-badge">Web Dev</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>E-Commerce Platform</h4>
+                            <p>React · Node.js · MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-2">
+                    <div class="portfolio-thumb pt-2" style="font-size:2.5rem;">📱</div>
+                    <span class="port-badge">Social</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>Brand Social Strategy</h4>
+                            <p>Instagram · Reels · Growth</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-3">
+                    <div class="portfolio-thumb pt-3" style="font-size:2.5rem;">🎬</div>
+                    <span class="port-badge">Video</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>YouTube Channel Launch</h4>
+                            <p>Editing · Thumbnails · SEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-1">
+                    <div class="portfolio-thumb pt-4" style="font-size:2.5rem;">🎨</div>
+                    <span class="port-badge">Design</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>Brand Identity System</h4>
+                            <p>Logo · Colors · Typography</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-2">
+                    <div class="portfolio-thumb pt-5" style="font-size:2.5rem;">🚀</div>
+                    <span class="port-badge">Web Dev</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>SaaS Dashboard</h4>
+                            <p>Vue.js · REST API · Charts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal reveal-delay-3">
+                    <div class="portfolio-thumb pt-6" style="font-size:2.5rem;">✨</div>
+                    <span class="port-badge">Design</span>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-meta">
+                            <h4>Motion Graphics Pack</h4>
+                            <p>After Effects · Premiere</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="pad-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">// Let's Talk</div>
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+            </div>
+            <div class="contact-inner reveal">
+                <div class="contact-glow">
+                    <h3
+                        style="font-family:'Orbitron',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:0.8rem;">
+                        Ready to Build Something Amazing?</h3>
+                    <p style="color:var(--text2);line-height:1.7;font-size:0.95rem;">Drop us a message on WhatsApp
+                        or
+                        shoot us an email. We respond fast and we're always excited about new projects.</p>
+                    <div class="contact-btns">
+                        <a href="https://wa.me/917991410190" target="_blank" class="contact-btn btn-whatsapp">
+                            <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i> WhatsApp Chat
+                        </a>
+                        <a href="mailto:kumarankit1731999@gmail.com" class="contact-btn btn-email">
+                            <i class="fas fa-envelope"></i> Send Email
+                        </a>
+                    </div>
+                    <div class="contact-info">
+                        <p>📞 +91 7991410190 &nbsp;|&nbsp; ✉️ kumarankit1731999@gmail.com</p>
+                    </div>
+                    <div class="contact-note">⚡ Usually respond within 2 hours</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-logo">APNA KAAM</div>
+        <ul class="footer-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p class="footer-text">Made with <span class="footer-heart">♥</span> by Apna Kaam Team &nbsp;·&nbsp; Deepak,
+            Deepanshu, Aman & Shubham</p>
+        <p class="footer-text" style="margin-top:0.5rem;opacity:0.5;">© 2025 Apna Kaam. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
